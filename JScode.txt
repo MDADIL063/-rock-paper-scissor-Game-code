@@ -1,0 +1,29 @@
+      // 'Rock', 'Paper', 'Scissor' Game code in JavaScript.
+
+        for (let i = 1; i <= 3; i++) 
+      {
+
+        choose = prompt("Type your word in this options - 'rock', 'paper', 'scissor',- You have only 3 chance ");
+       
+        let word = ["rock", "paper", "scissor"];
+
+        let words = word[Math.floor(Math.random() * word.length)]; 
+        
+        if (words == choose) 
+        {
+         
+          alert("You win");
+          alert("The computer chose:" + words);
+          console.log("Congratulations you are the winner");
+          console.log("Your win ratio is :", 100 / i, "%");
+
+          break;
+        } 
+         
+        else 
+        {
+          alert("Better luck next time ");
+          alert("The computer chose:" + words);
+        }
+
+      }
